@@ -24,6 +24,7 @@ function Contacts() {
           );
         })}
       </div>
+      <hr />
     </div>
   );
 }

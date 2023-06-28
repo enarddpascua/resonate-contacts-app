@@ -9,6 +9,7 @@ function Header() {
         <CgProfile size={30} />
         <Title>Contacts</Title>
       </div>
+      <hr />
     </header>
   );
 }
