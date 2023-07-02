@@ -1,10 +1,9 @@
-import Text from "../ui/Text";
 import "./styles.css";
 
 function ContactCard({ data }) {
   const { name, email, username, phone, address, company } = data;
   return (
-    <tr>
+    <tr className="table-row-container">
       <td>{name}</td>
       <td>{username}</td>
       <td>{email}</td>
