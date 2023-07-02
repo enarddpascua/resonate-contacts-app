@@ -1,11 +1,7 @@
-header{
-    border-bottom: 1px solid black;
-}
-
 .title-container{
     display: flex;
     flex-direction: row;
-    align-items: center;   
+    align-items: center;  
 }
 
 .title-container > h1{
