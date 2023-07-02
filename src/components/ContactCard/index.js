@@ -1,9 +1,9 @@
 import "./styles.css";
 
-function ContactCard({ data }) {
+function ContactCard({ data, setShowModal }) {
   const { name, email, username, phone, address, company } = data;
   return (
-    <tr className="table-row-container">
+    <tr className="table-row-container" onClick={() => setShowModal(true)}>
       <td>{name}</td>
       <td>{username}</td>
       <td>{email}</td>
