@@ -1,16 +1,71 @@
-.modal-parent{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.15);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.modal-parent {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.modal-container{
-    width: 500px;
-    background-color: #fff;
+.modal-container {
+  width: 50%;
+  height: 50%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.modal-header {
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.close-button-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.avatar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-wrapper > p {
+  font-weight: bold;
+  font-size: large;
+}
+
+.email-website-container > span:nth-child(1),
+span:nth-child(3) {
+  cursor: pointer;
+  color: blue;
+}
+
+.modal-body {
+  padding: 1em;
+  height: 55%;
+  overflow-y: auto;
+}
+
+.modal-body > p,
+.info-container > p {
+  color: #829ab1;
+  font-size: medium;
+}
+
+.modal-body > p > span,
+.info-container > p > span {
+  color: black;
+  margin-left: 1em;
 }

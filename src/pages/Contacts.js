@@ -9,6 +9,7 @@ function Contacts() {
   const [contacts, setContacts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [selectedContact, setSelectedContact] = useState({});
 
   async function getContacts() {
     setLoading(true);
@@ -58,6 +59,8 @@ function Contacts() {
                       data={el}
                       key={el.id}
                       setShowModal={setShowModal}
+                      selectedContact={selectedContact}
+                      setSelectedContact={setSelectedContact}
                     />
                   );
                 })
@@ -70,7 +73,13 @@ function Contacts() {
           </table>
         )}
       </div>
-      {showModal && <Modal />}
+      {showModal && (
+        <Modal
+          closeModal={setShowModal}
+          removeActiveRow={setSelectedContact}
+          selectedContact={selectedContact}
+        />
+      )}
     </div>
   );
 }

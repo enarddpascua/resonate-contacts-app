@@ -1,9 +1,25 @@
 import "./styles.css";
 
-function ContactCard({ data, setShowModal }) {
+function ContactCard({
+  data,
+  setShowModal,
+  selectedContact,
+  setSelectedContact,
+}) {
   const { name, email, username, phone, address, company } = data;
+
+  function onRowClick() {
+    setShowModal(true);
+    setSelectedContact(data);
+  }
+  console.log(selectedContact.id == data.id ? "active-row" : "");
   return (
-    <tr className="table-row-container" onClick={() => setShowModal(true)}>
+    <tr
+      className={`table-row-container ${
+        selectedContact.id == data.id ? "active-row" : ""
+      }`}
+      onClick={onRowClick.bind(this)}
+    >
       <td>{name}</td>
       <td>{username}</td>
       <td>{email}</td>
