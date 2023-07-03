@@ -1,9 +1,13 @@
-.title-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
+header {
+  padding: 5em;
 }
 
-.title-container > h1{
-    margin-left: .5rem;
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title-container > h1 {
+  margin-left: 0.5rem;
 }
