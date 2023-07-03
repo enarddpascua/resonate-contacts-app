@@ -1,4 +1,8 @@
-.table-row-container{
-    cursor: pointer;
+.table-row-container {
+  cursor: pointer;
+}
 
+.active-row {
+  background-color: #f0b429 !important;
+  color: #003e6b;
 }
