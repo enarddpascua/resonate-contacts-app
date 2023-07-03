@@ -1,0 +1,15 @@
+.avatar-container {
+  border-radius: 50%;
+  background-color: #0a558c;
+  height: 100px;
+  width: 100px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-container > span {
+  font-size: xx-large;
+  text-transform: uppercase;
+}
