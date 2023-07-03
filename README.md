@@ -8,6 +8,7 @@ A simple contacts application with responsive design. Created with create-react-
 
 1. Axios (promise-based HTTP Client for node.js and the browser)
 2. React-icons
+3. gh-pages
 
 ## Requirements
 
