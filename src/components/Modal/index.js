@@ -33,7 +33,6 @@ function Modal({ closeModal, removeActiveRow, selectedContact }) {
             <IoIosClose color="#003E6B" size={40} />
           </div>
         </section>
-        <hr />
         <section className="modal-body">
           <p>
             Username: <span>{username}</span>
@@ -43,6 +42,7 @@ function Modal({ closeModal, removeActiveRow, selectedContact }) {
           </p>
           <div className="info-container">
             <h3>Address</h3>
+            <div className="horizontal-rule" />
             <p>
               Unit/Suite: <span>{address?.suite}</span>
             </p>
@@ -58,6 +58,7 @@ function Modal({ closeModal, removeActiveRow, selectedContact }) {
           </div>
           <div className="info-container">
             <h3>Company</h3>
+            <div className="horizontal-rule" />
             <p>
               Name: <span>{company?.name}</span>
             </p>
