@@ -44,10 +44,10 @@ function Contacts() {
             <thead>
               <tr>
                 <th>Name</th>
-                <th>Username</th>
-                <th>Email</th>
-                <th>City</th>
                 <th>Phone</th>
+                <th>Email</th>
+                <th>Username</th>
+                <th>City</th>
                 <th>Company</th>
               </tr>
             </thead>

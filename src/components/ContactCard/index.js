@@ -21,10 +21,10 @@ function ContactCard({
       onClick={onRowClick.bind(this)}
     >
       <td>{name}</td>
-      <td>{username}</td>
-      <td>{email}</td>
-      <td>{address.city}</td>
       <td>{phone}</td>
+      <td>{email}</td>
+      <td>{username}</td>
+      <td>{address.city}</td>
       <td>{company.name}</td>
     </tr>
   );
