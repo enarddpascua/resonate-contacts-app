@@ -30,7 +30,6 @@ function Contacts() {
   useEffect(() => {
     getContacts();
   }, []);
-  console.log(contacts);
 
   return (
     <div id="container">

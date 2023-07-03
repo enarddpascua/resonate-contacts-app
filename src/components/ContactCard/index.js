@@ -12,7 +12,7 @@ function ContactCard({
     setShowModal(true);
     setSelectedContact(data);
   }
-  console.log(selectedContact.id == data.id ? "active-row" : "");
+
   return (
     <tr
       className={`table-row-container ${
