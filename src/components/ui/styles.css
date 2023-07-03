@@ -1,0 +1,23 @@
+.info-text-container {
+  display: flex;
+  align-items: center;
+  color: #829ab1;
+  font-size: medium;
+}
+
+.info-text-container > div:nth-child(2) {
+  margin-left: 1em;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .info-text-container {
+    font-size: small;
+  }
+}
+
+@media (max-height: 700px) {
+  .info-text-container {
+    font-size: small;
+  }
+}

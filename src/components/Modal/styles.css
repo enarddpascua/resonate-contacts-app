@@ -85,3 +85,41 @@ span:nth-child(3) {
 .horizontal-rule {
   border-bottom: 0.5px solid #829ab1;
 }
+
+@media (max-width: 600px) {
+  .email-website-container {
+    font-size: small;
+  }
+
+  .modal-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 400px) {
+  .email-website-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .email-website-container > span:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-height: 900px) {
+  .modal-container {
+    height: 80%;
+  }
+}
+
+@media (max-height: 700px) {
+  .modal-container {
+    height: 80%;
+  }
+  .email-website-container {
+    font-size: small;
+  }
+}

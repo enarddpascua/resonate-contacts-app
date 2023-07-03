@@ -1,4 +1,5 @@
 import Avatar from "../Avatar";
+import InfoText from "../ui/InfoText";
 import "./styles.css";
 import { IoIosClose } from "react-icons/io";
 
@@ -30,44 +31,26 @@ function Modal({ closeModal, removeActiveRow, selectedContact }) {
             className="close-button-wrapper"
             onClick={onCloseModal.bind(this)}
           >
-            <IoIosClose color="#003E6B" size={40} />
+            <IoIosClose color="#fff" size={40} />
           </div>
         </section>
         <section className="modal-body">
-          <p>
-            Username: <span>{username}</span>
-          </p>
-          <p>
-            Phone #: <span>{phone}</span>
-          </p>
+          <InfoText title="Username">{username}</InfoText>
+          <InfoText title="Phone #">{phone}</InfoText>
           <div className="info-container">
             <h3>Address</h3>
             <div className="horizontal-rule" />
-            <p>
-              Unit/Suite: <span>{address?.suite}</span>
-            </p>
-            <p>
-              Street: <span>{address?.street}</span>
-            </p>
-            <p>
-              City: <span>{address?.city}</span>
-            </p>
-            <p>
-              Postal code: <span>{address?.zipcode}</span>
-            </p>
+            <InfoText title="Unit/Suite">{address?.suite}</InfoText>
+            <InfoText title="Street">{address?.street}</InfoText>
+            <InfoText title="City">{address?.city}</InfoText>
+            <InfoText title="Postal code">{address?.zipcode}</InfoText>
           </div>
           <div className="info-container">
             <h3>Company</h3>
             <div className="horizontal-rule" />
-            <p>
-              Name: <span>{company?.name}</span>
-            </p>
-            <p>
-              Service: <span>{company?.bs}</span>
-            </p>
-            <p>
-              Catch phrase: <span>{company?.catchPhrase}</span>
-            </p>
+            <InfoText title="Name">{company?.name}</InfoText>
+            <InfoText title="Service">{company?.bs}</InfoText>
+            <InfoText title="Catch Phrase">{company?.catchPhrase}</InfoText>
           </div>
         </section>
       </div>
